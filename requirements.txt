@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+jaydebeapi
+pydantic
+python-multipart
+
