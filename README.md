@@ -1,5 +1,7 @@
-## Run a REST jdbc server
-# Layout...
+# Run a REST jdbc server
+
+# Layout
+
 app/
 ├── main.py
 ├── config.py
@@ -13,19 +15,22 @@ app/
 │   └── yourdriver.jar
 └── requirements.txt
 
-# To run the application...
+# To run the application
+
 uvicorn main:app \
   --host 0.0.0.0 \
   --port 8443 \
   --ssl-keyfile certs/server.key \
   --ssl-certfile certs/server.crt
 
-# Test fetch...
+# Test fetch
+
 curl -k \
 -u restuser:restpassword \
 "https://server:8443/query/1?filter_value=12345"
 
-# Test insert...
+# Test insert
+
 curl -k \
 -u restuser:restpassword \
 -H "Content-Type: application/json" \
