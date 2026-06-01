@@ -1,0 +1,20 @@
+[Unit]
+Description=Flask JDBC API
+After=network.target
+
+[Service]
+User=apiuser
+Group=apiuser
+
+WorkingDirectory=/opt/jdbc-api
+
+Environment="JAVA_HOME=/usr/lib/jvm/java-17-openjdk"
+
+ExecStart=/opt/jdbc-api/venv/bin/gunicorn \
+    -c gunicorn.conf.py \
+    app:app
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
