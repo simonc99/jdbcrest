@@ -3,17 +3,29 @@
 ### Layout
 
 app/
+
 ├── main.py
+
 |
+
 ├── config.py
+
 ├── database.py
+
 ├── models.py
+
 ├── auth.py
+
 ├── certs/
-│   ├── server.crt
-│   └── server.key
+
+│   ├── server.crt
+
+│   └── server.key
+
 ├── jdbc/
-│   └── yourdriver.jar
+
+│   └── yourdriver.jar
+
 └── requirements.txt
 
 ### To run the application
