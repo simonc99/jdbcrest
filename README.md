@@ -4,6 +4,7 @@
 
 app/
 ├── main.py
+|
 ├── config.py
 ├── database.py
 ├── models.py
